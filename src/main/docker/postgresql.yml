@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipsterkafka-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterKafka/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterKafka
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5442:5432
